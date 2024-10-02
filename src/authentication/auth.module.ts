@@ -1,10 +1,10 @@
 import { Module } from '@nestjs/common';
 import { PassportModule } from '@nestjs/passport';
-import { CustomConfigModule } from '../config/config.module'; // Asegúrate de importar el módulo correcto
+import { CustomConfigModule } from '../config/config.module';
 import { AzureADStrategy } from './strategies/azuread.strategys';
 
 @Module({
-    imports: [PassportModule, CustomConfigModule], // Importa el módulo de configuración
+    imports: [PassportModule, CustomConfigModule],
     providers: [AzureADStrategy],
     exports: [PassportModule],
 })

@@ -4,6 +4,6 @@ import { Injectable } from '@nestjs/common';
 export class GreetingsService {
 
     async getGreetings(): Promise<any> {
-        return { "message": "Welcome User !! Greetings from NestJS !!" };
+        return { "message": "This user is valid" };
     }
 }
